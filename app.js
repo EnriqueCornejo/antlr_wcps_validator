@@ -12,4 +12,3 @@ parser.buildParseTrees = true;
 const tree = parser.wcpsQuery();
 const qListener = new QueryWCPSListener();
 antlr4.tree.ParseTreeWalker.DEFAULT.walk(qListener, tree);
-console.log("Fin");

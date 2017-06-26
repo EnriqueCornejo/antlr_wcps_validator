@@ -17,7 +17,17 @@ QueryWCPSListener.prototype.constructor = QueryWCPSListener;
 
 // override default listener behavior
 QueryWCPSListener.prototype.enterForClauseLabel = function(ctx) {
-    console.log("FOR CLAUSE");
+    console.log("ENTER FOR CLAUSE");
+};
+
+// override default listener behavior
+QueryWCPSListener.prototype.enterReturnClauseLabel = function(ctx) {
+    console.log("ENTERED RETURN CLAUSE");
+};
+
+
+QueryWCPSListener.prototype.exitForClauseLabel = function(ctx) {
+    console.log("EXITED FOR CLAUSE");
 };
 
 exports.QueryWCPSListener = QueryWCPSListener;
